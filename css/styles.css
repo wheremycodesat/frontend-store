@@ -236,18 +236,30 @@ h3 {
 
 /*Producto*/
 
+.camisa {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 @media (min-width: 768px) {
   .camisa {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
   }
-}
 
-.formulario {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 }
 
 .formulario__campo {
